@@ -1,1 +1,60 @@
+package com.company;
+import com.Product;
+import jdk.internal.icu.text.UnicodeSet;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+public class main {
+
+    public static void main(String[] args, UnicodeSet Price) {
+        ArrayList<product> stock = new ArrayList<product>();
+        ArrayList<price> purchase = new ArrayList<price>();
+
+
+        Product add = new Product();
+        Product.add("Bison Sweater ");
+        Price.add(55.99);
+        stock.add(product);
+
+        Product add = new Product();
+        Product.add("Bison Tee ");
+        Price.add((14.99);
+        stock.add(product);
+
+        Product add = new Product();
+        Product.add("Bison Hoodie ");
+        Price.add(23.99);
+        stock.add(product);
+
+        Product add = new Product();
+        Product.add("Bison Bumpersticker ");
+        Price.add(4.99);
+        stock.add(product);
+
+        Scanner input = new Scanner(System.in);
+        String item;
+        double sum = 0.0;
+        int index = -1;
+
+        do {
+            System.out.println("What item was purchased?: ");
+            item = input.nextLine();
+            purchase.add(item);
+            for (int i = 0; i < product.size(); i++) {
+                if (item.equals(product.get(i))) {
+                    index = i;
+                }
+            }
+
+            purchaseprice.add(price.get(index));
+
+        } while (!item.equalsIgnoreCase("no"));
+
+        for (int i = 0; i < purchase.size() - 1; i++) {
+            System.out.println("Items purchased: " + purchase.get(i));
+            sum += purchaseprice.get(i);
+        }
+        System.out.println("Items Purchased Total: " + sum);
+    }
+}
 
